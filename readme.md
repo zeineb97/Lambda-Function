@@ -12,6 +12,7 @@
 - [Overview](#overview)
 - [Workflow](#workflow)
 - [Steps](#steps)
+- [Be carefull](#becarefull)
 
 
 ## Overview
@@ -29,3 +30,16 @@ We will create an S3 bucket that contains 2 different directories, in one direct
 - Go to AWS Lambda --> Functions.
 - Build your function ( I choose to build it with a python runtime Language).
 - Add Trigger to the created Lambda Function :  (our trigger is S3 --> choose your created Bucket  --> Event : All object create events)
+- Change permissions of the setted Role of the Lambda Function with adding Amazon S3 Full Access Policy.
+
+> See : ![Policy to Grant AWS](https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2018/01/21/AR_Diagram_010418.png)
+
+
+- Create a Layer for the pillow dependency : AWS Lambda --> Additional ressources --> Layers --> upload the pillow.zip. ( python 4 runtime)
+- Add this custom Layer to the Lambda Function
+
+
+
+## Be carefull
+We need the library "pillow" the resizing. 
+Pillow is attached as a dependency is this Repo. 
