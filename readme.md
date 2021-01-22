@@ -12,7 +12,7 @@
 - [Overview](#overview)
 - [Workflow](#workflow)
 - [Steps](#steps)
-- [Be carefull](#becarefull)
+- [Be careful](#becareful)
 
 
 ## Overview
@@ -40,6 +40,6 @@ We will create an S3 bucket that contains 2 different directories, in one direct
 
 
 
-## Be carefull
+## Be careful
 We need the library "pillow" the resizing. 
 Pillow is attached as a dependency is this Repo. 
